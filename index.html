@@ -92,6 +92,18 @@
             transform: scale(1.05);
         }
 
+        .home-icon {
+            display: none;
+            font-size: 1.5rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .home-icon:hover {
+            transform: scale(1.2);
+        }
+
         .hero {
             margin-top: 80px;
             min-height: 90vh;
@@ -936,6 +948,9 @@
             .nav-links {
                 display: none;
             }
+            .home-icon {
+                display: block;
+            }
             .terminal-mockup, .tpv-device {
                 display: none;
             }
@@ -1042,6 +1057,7 @@
                 <li><a href="#mi-negocio">Mi negocio</a></li>
                 <li><a href="tel:8111771862" class="phone-number">81 11771862</a></li>
             </ul>
+            <a href="#" class="home-icon" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">🏠</a>
         </nav>
     </header>
 
