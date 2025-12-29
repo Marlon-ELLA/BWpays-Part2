@@ -88,10 +88,13 @@
         @keyframes floatService { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
         @media (max-width: 768px) { 
             .products-grid { grid-template-columns: 1fr; }
+            .tpv-content, .payment-links-content, .api-content { grid-template-columns: 1fr; text-align: center; }
+            .tpv-text h2, .payment-links-text h2 { font-size: 2.5rem; }
             .nav-links { display: none; }
             .hamburger { display: block; }
             .mobile-menu { display: block; }
             .home-icon { display: none; }
+            .tpv-device { display: none; }
             .api-icon { width: 100%; height: 280px; max-width: 400px; margin: 0 auto; } 
             .api-image { display: flex; justify-content: center; padding-right: 0; } 
         }
