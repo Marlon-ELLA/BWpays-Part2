@@ -255,7 +255,7 @@
             box-shadow: 0 30px 60px rgba(0,0,0,0.3);
             display: flex;
             flex-direction: column;
-            padding: 2rem;
+            padding: 1rem;
             animation: floatTerminal 3s ease-in-out infinite;
         }
 
@@ -1015,6 +1015,14 @@
             transform: scale(1.1);
         }
 
+        /* Sección CTA: Empieza ahora (global) */
+        .cta-hero { padding: 6rem 2rem; background: transparent; }
+        .cta-hero .cta-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: center; text-align: center; border-radius: 20px; padding: 4rem; box-shadow: 0 20px 60px rgba(0,0,0,0.3); background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)), url('imagenes ppt/FondoBWPAys.gif'); background-size: cover; background-position: center; color: #fff; }
+        .cta-hero h2 { font-size: 2.6rem; margin-bottom: 0.5rem; color: #fff; }
+        .cta-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.9); max-width: 900px; margin: 0 auto 1.25rem; }
+        .cta-hero .cta-button { display: inline-block; background: linear-gradient(135deg,#2956b7 0%, #00a9e0 100%); color: white; padding: 0.95rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 700; box-shadow: 0 10px 25px rgba(41,86,183,0.18); transition: transform 0.2s; }
+        .cta-hero .cta-button:hover { transform: translateY(-3px); }
+
         @media (max-width: 768px) {
             .hero-content, .benefits-content, .expand-content, .tpv-content, .payment-links-content, .api-content {
                 grid-template-columns: 1fr;
@@ -1029,8 +1037,15 @@
             .hamburger {
                 display: block;
             }
-            .mobile-menu {
-                display: block;
+            .whatsapp-float:hover {
+                transform: scale(1.1);
+            }
+
+            /* CTA responsive overrides */
+            .cta-hero .cta-inner { padding: 2rem; border-radius: 12px; }
+            .cta-hero h2 { font-size: 1.9rem; }
+            .cta-hero p { font-size: 1rem; }
+            .cta-hero .cta-button { width: 100%; padding: 1rem; display: inline-block; }
             }
             .home-icon {
                 display: none;
@@ -1170,7 +1185,7 @@
             </div>
             <div class="hero-image">
                 <div class="terminal-mockup">
-                    <img src="imagenes ppt/WhatsApp Image 2025-12-23 at 19.09.49_821ff84e.jpg" alt="Terminal mockup">
+                    <img src="imagenes ppt/WhatsApp Image 2025-12-23 at 6.55.54 PM.jpeg" alt="Terminal mockup">
                 </div>
             </div>
         </div>
@@ -1196,7 +1211,7 @@
     <section class="expand-hero">
         <div class="expand-content">
             <div class="expand-text">
-                <h2>Haz que tu Negocio pueda llegar a más personas</h2>
+                <h2>Haz que tu negocio pueda llegar a más personas</h2>
                 <ul class="expand-features">
                     <li>Botón de pagos para tu comercio electrónico</li>
                     <li>Link de pagos (para que puedan pagar a distancia)</li>
@@ -1232,8 +1247,16 @@
         </div>
     </section>
 
-    <section class="contact" id="contacto">
-        <div class="contact-container">
+        <section class="cta-hero">
+            <div class="cta-inner">
+                <h2>Empieza ahora ingresando a nuestra página</h2>
+                <p>Accede a la Central y administra tus pagos, links y reportes desde una sola plataforma.</p>
+                <a class="cta-button" href="https://bw-centraladmin.efevoopay.com" target="_blank" rel="noopener">Click Aquí</a>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="contact-container">
             <h2 class="section-title2" style="color: white;">Comienza Hoy</h2>
             <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Completa el formulario y te contactamos para ofrecerte la mejor solución</p>
             <form class="contact-form" action="https://formspree.io/f/xykykjel" method="POST">

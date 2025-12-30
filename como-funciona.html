@@ -67,6 +67,14 @@
         .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid #333; color: #666; }
         .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #f72c0b; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; box-shadow: 0 5px 20px rgba(247, 44, 11, 0.4); transition: transform 0.3s; z-index: 1000; text-decoration: none; }
         .whatsapp-float:hover { transform: scale(1.1); }
+
+        /* Sección CTA: Empieza ahora */
+        .cta-hero { padding: 6rem 2rem; background: transparent; }
+        .cta-hero .cta-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: center; text-align: center; border-radius: 20px; padding: 4rem; box-shadow: 0 20px 60px rgba(0,0,0,0.3); background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)), url('imagenes ppt/FondoBWPAys.gif'); background-size: cover; background-position: center; color: #fff; }
+        .cta-hero h2 { font-size: 2.6rem; margin-bottom: 0.5rem; color: #fff; }
+        .cta-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.9); max-width: 900px; margin: 0 auto 1.25rem; }
+        .cta-hero .cta-button { display: inline-block; background: linear-gradient(135deg,#2956b7 0%, #00a9e0 100%); color: white; padding: 0.95rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 700; box-shadow: 0 10px 25px rgba(41,86,183,0.18); transition: transform 0.2s; }
+        .cta-hero .cta-button:hover { transform: translateY(-3px); }
         @media (max-width: 768px) { 
             .nav-links { display: none; }
             .hamburger { display: block; }
@@ -74,6 +82,11 @@
             .home-icon { display: none; }
             .carousel-container { grid-template-columns: 1fr; } 
             .carousel-dots { justify-content: center; grid-column: auto; } 
+            /* CTA responsive overrides */
+            .cta-hero .cta-inner { padding: 2rem; border-radius: 12px; }
+            .cta-hero h2 { font-size: 1.9rem; }
+            .cta-hero p { font-size: 1rem; }
+            .cta-hero .cta-button { width: 100%; padding: 1rem; display: inline-block; }
         }
     </style>
 </head>
@@ -162,6 +175,14 @@
                     <h4 id="videoTitle">Guía Rápida</h4>
                     <p id="videoDescription">Proceso de Visualización de Historial</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="cta-hero">
+            <div class="cta-inner">
+                <h2>Empieza ahora ingresando a nuestra página</h2>
+                <p>Accede a la Central y administra tus pagos, links y reportes desde una sola plataforma.</p>
+                <a class="cta-button" href="https://bw-centraladmin.efevoopay.com" target="_blank" rel="noopener">Click Aquí</a>
             </div>
         </section>
 
