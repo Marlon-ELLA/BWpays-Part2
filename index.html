@@ -65,38 +65,10 @@
             align-items: center;
         }
 
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #2956b7;
-        }
-
-        .nav-links a:not(.phone-number) {
-            color: #333;
-        }
-
-        .nav-links a:not(.phone-number):hover {
-            color: #2956b7;
-        }
-
-        .nav-links .phone-number {
-            background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%);
-            color: white;
-            padding: 0.7rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-
-        .nav-links .phone-number:hover {
-            transform: scale(1.05);
-        }
+        .nav-links a:not(.phone-number) { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:not(.phone-number):hover { color: #2956b7; }
+        .nav-links .phone-number { background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%); color: white; padding: 0.7rem 1.5rem; border-radius: 25px; font-weight: 600; text-decoration: none; transition: transform 0.3s; }
+        .nav-links .phone-number:hover { transform: scale(1.05); }
 
         .home-icon {
             display: none;
@@ -985,6 +957,9 @@
             }
             .nav-links {
                 display: none;
+            }
+            .mobile-menu {
+                display: block;
             }
             .hamburger {
                 display: block;
