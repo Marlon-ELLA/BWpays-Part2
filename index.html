@@ -76,11 +76,17 @@
             color: #2956b7;
         }
 
-        .phone-number {
+        .nav-links a:not(.phone-number) {
+            color: #333;
+        }
+
+        .nav-links a:not(.phone-number):hover {
+            color: #2956b7;
+        }
+
+        .nav-links .phone-number {
             background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%);
             color: white;
-	    -webkit-background-clip: initial;
-    	    -webkit-text-fill-color: #ffffff;
             padding: 0.7rem 1.5rem;
             border-radius: 25px;
             font-weight: 600;
@@ -88,7 +94,7 @@
             transition: transform 0.3s;
         }
 
-        .phone-number:hover {
+        .nav-links .phone-number:hover {
             transform: scale(1.05);
         }
 
@@ -172,6 +178,10 @@
             background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%);
             color: white;
             padding-left: 1.5rem;
+        }
+
+        .mobile-nav-links a[href*="wa.me"] {
+            color: white !important;
         }
 
         .hero {
@@ -1096,7 +1106,7 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="como-funciona.html">Cómo Funciona</a></li>
                 <li><a href="index.html#contacto">Contacto</a></li>
-                <li><a href="tel:8111771862" class="phone-number">81 11771862</a></li>
+                <li><a href="https://wa.me/528111771862" class="phone-number">81 11771862</a></li>
             </ul>
             <button class="hamburger" onclick="toggleMenu()">☰</button>
             <a href="#" class="home-icon" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">🏠</a>
@@ -1110,7 +1120,7 @@
             <li><a href="productos.html" onclick="toggleMenu()">Productos</a></li>
             <li><a href="como-funciona.html" onclick="toggleMenu()">Cómo Funciona</a></li>
             <li><a href="index.html#contacto" onclick="toggleMenu()">Contacto</a></li>
-            <li><a href="tel:8111771862" onclick="toggleMenu()">☎ 81 11771862</a></li>
+            <li><a href="https://wa.me/528111771862" onclick="toggleMenu()">☎ 81 11771862</a></li>
         </ul>
     </div>
 
@@ -1169,22 +1179,30 @@
         <h2 class="section-title">Productos</h2>
         <p class="section-subtitle">Soluciones diseñadas para cada tipo de negocio</p>
         <div class="products-grid">
-            <div class="product-card">
-                <div class="product-header"><h3>Checkout</h3></div>
-                <div class="product-body"><p>Integra vía API un checkout en tu e-commerce o sitio web y acepta pagos con tarjeta fácilmente.</p></div>
-            </div>
-            <div class="product-card">
-                <div class="product-header"><h3>Link de pago</h3></div>
-                <div class="product-body"><p>Recibe pagos digitales a distancia a través de redes sociales de una manera rápida y segura.</p></div>
-            </div>
-            <div class="product-card">
-                <div class="product-header"><h3>API</h3></div>
-                <div class="product-body"><p>Recibe pagos digitales rápidos y sin filas a través de un código QR fijo para tu comercio.</p></div>
-            </div>
-            <div class="product-card">
-                <div class="product-header"><h3>Portal administrativo</h3></div>
-                <div class="product-body"><p>Visualiza tus ventas en tiempo real, genera reportes y crea links de pago o códigos QR para tu comercio fácilmente.</p></div>
-            </div>
+            <a href="productos.html" style="text-decoration: none;">
+                <div class="product-card">
+                    <div class="product-header"><h3>Checkout</h3></div>
+                    <div class="product-body"><p>Integra vía API un checkout en tu e-commerce o sitio web y acepta pagos con tarjeta fácilmente.</p></div>
+                </div>
+            </a>
+            <a href="productos.html" style="text-decoration: none;">
+                <div class="product-card">
+                    <div class="product-header"><h3>Link de pago</h3></div>
+                    <div class="product-body"><p>Recibe pagos digitales a distancia a través de redes sociales de una manera rápida y segura.</p></div>
+                </div>
+            </a>
+            <a href="productos.html" style="text-decoration: none;">
+                <div class="product-card">
+                    <div class="product-header"><h3>API</h3></div>
+                    <div class="product-body"><p>Recibe pagos digitales rápidos y sin filas a través de un código QR fijo para tu comercio.</p></div>
+                </div>
+            </a>
+            <a href="productos.html" style="text-decoration: none;">
+                <div class="product-card">
+                    <div class="product-header"><h3>Portal administrativo</h3></div>
+                    <div class="product-body"><p>Visualiza tus ventas en tiempo real, genera reportes y crea links de pago o códigos QR para tu comercio fácilmente.</p></div>
+                </div>
+            </a>
         </div>
     </section>
 

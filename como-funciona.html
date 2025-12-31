@@ -16,10 +16,10 @@
         .logo { font-family: Verdana, Geneva, sans-serif; font-size: 1.5rem; font-weight: 700; }
         .logo img { height: 40px; width: auto; display: block; background: transparent; }
         .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
-        .nav-links a { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
-        .nav-links a:hover { color: #2956b7; }
-        .phone-number { background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%); color: white; padding: 0.7rem 1.5rem; border-radius: 25px; font-weight: 600; text-decoration: none; transition: transform 0.3s; }
-        .phone-number:hover { transform: scale(1.05); }
+        .nav-links a:not(.phone-number) { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:not(.phone-number):hover { color: #2956b7; }
+        .nav-links .phone-number { background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%); color: white; padding: 0.7rem 1.5rem; border-radius: 25px; font-weight: 600; text-decoration: none; transition: transform 0.3s; }
+        .nav-links .phone-number:hover { transform: scale(1.05); }
         .hamburger { display: none; background: none; border: none; font-size: 2rem; cursor: pointer; color: #333; transition: color 0.3s; }
         .hamburger:hover { color: #2956b7; }
         .home-icon { display: none; font-size: 1.5rem; text-decoration: none; cursor: pointer; transition: transform 0.3s; }
@@ -30,6 +30,7 @@
         .mobile-nav-links { list-style: none; padding: 3rem 1.5rem 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
         .mobile-nav-links a { display: block; text-decoration: none; color: #333; font-weight: 500; padding: 1rem; border-radius: 10px; transition: all 0.3s; font-size: 1.1rem; }
         .mobile-nav-links a:hover { background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%); color: white; padding-left: 1.5rem; }
+        .mobile-nav-links a[href*="wa.me"] { color: white !important; }
         .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; background: linear-gradient(135deg, #2956b7 0%, #00a9e0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .section-title2 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #ffffff; }
         .section-subtitle { text-align: center; color: #666; font-size: 1.2rem; margin-bottom: 4rem; }
@@ -99,7 +100,7 @@
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="como-funciona.html">Cómo Funciona</a></li>
                 <li><a href="como-funciona.html#contacto">Contacto</a></li>
-                <li><a href="tel:8111771862" class="phone-number">81 11771862</a></li>
+                <li><a href="https://wa.me/528111771862" class="phone-number">81 11771862</a></li>
             </ul>
             <button class="hamburger" onclick="toggleMenu()">☰</button>
             <a href="index.html" class="home-icon">🏠</a>
@@ -113,7 +114,7 @@
             <li><a href="productos.html" onclick="toggleMenu()">Productos</a></li>
             <li><a href="como-funciona.html" onclick="toggleMenu()">Cómo Funciona</a></li>
             <li><a href="como-funciona.html#contacto" onclick="toggleMenu()">Contacto</a></li>
-            <li><a href="tel:8111771862" onclick="toggleMenu()">☎ 81 11771862</a></li>
+            <li><a href="https://wa.me/528111771862" onclick="toggleMenu()">☎ 81 11771862</a></li>
         </ul>
     </div>
 
